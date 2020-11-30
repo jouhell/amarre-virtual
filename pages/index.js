@@ -54,10 +54,7 @@ const Home = () => {
   const handleEnter = () => {
     if (isEmpty(name)) return
 
-    router.push({
-      pathname: '/[name]',
-      query: { name },
-    })
+    router.push(`/${name}`)
   }
 
   const handleKeyDown = (e) => {
